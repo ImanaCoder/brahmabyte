@@ -1,4 +1,9 @@
 /* --------SERVICE HERO SECTION------------ */
+*{
+  margin:0;
+  padding:0;
+  /* box-sizing: border-box; */
+}
 
 .service-hero-section {
   position: relative;
@@ -13,6 +18,7 @@
   width: 100%;
   object-fit: cover;
 }
+
 .service-hero-image::after {
   content: "";
   position: absolute;
@@ -24,8 +30,8 @@
 }
 .service-hero-container {
   position: absolute;
-  top: 50%;
-  left: 25%;
+  top: 30%;
+  left: 10%;
   transform: translate(-50%, -50%);
 }
 
@@ -40,6 +46,15 @@
 
 .service-hero-text span {
   font-weight: bold;
+}
+
+@media (max-width: 790px) {
+  .service-hero-container {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* ------SERVICE SECTION TWO---------- */
@@ -68,13 +83,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 30px 0;
-  padding: 20px 0;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
+
+
 .six-left {
-  width: 50%;
+  width: 100%;
 }
 .six-left-title h3 {
   font-size: 2.1rem;
@@ -85,16 +100,10 @@
   color: var(--primary-color);
   width: 80%;
 }
-.six-right {
-  width: 30%;
-}
+/* .six-right {
+  width: 100%
+} */
 
-.right-image-container {
-  height: 300px;
-  width: 350px;
-  display: inline-block;
-  margin: 10px;
-}
 
 .right-image-container img {
   height: 100%;
